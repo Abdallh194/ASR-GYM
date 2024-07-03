@@ -1,0 +1,67 @@
+.navbar {
+  background-color: transparent !important;
+  padding: 11px 42px !important;
+  margin-top: 15px;
+  .logo {
+    color: white;
+    font-family: $logo-font;
+    font-size: 41px;
+    letter-spacing: 2px;
+    .icon {
+      font-size: 35px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  .links {
+    a {
+      margin: 0 40px;
+      color: rgba(255, 255, 255, 0.615);
+      font-size: 17px;
+    }
+    .Active {
+      color: $gold-color;
+      font-weight: bold;
+    }
+  }
+  .me-auto {
+    margin-left: 170px;
+  }
+  .contacts {
+    .btn {
+      background-color: $gold-color;
+      margin-right: 40px;
+      border-radius: 0;
+      font-weight: bold;
+      color: black;
+    }
+  }
+  .navbar-toggler {
+    border: 1px solid rgb(255 255 255);
+  }
+
+  @media (max-width: 1400px) {
+    .me-auto {
+      margin-left: 89px;
+      margin-top: 0 !important;
+    }
+  }
+  @media (max-width: 1200px) {
+    .links {
+      a {
+        margin: 0 18px;
+      }
+    }
+    .me-auto {
+      margin-left: 65px;
+    }
+  }
+  @media (max-width: 992px) {
+    .contacts {
+      display: none !important;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 0 !important;
+  }
+}

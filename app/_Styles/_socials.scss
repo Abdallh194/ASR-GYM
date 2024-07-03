@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 110px;
+  .socials-head {
+    font-size: 19px;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  .socials-icon {
+    display: flex;
+    width: 222px;
+    justify-content: space-between;
+  }
+  .icon {
+    color: black;
+    background-color: $gold-color;
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 60px;
+  }
+}

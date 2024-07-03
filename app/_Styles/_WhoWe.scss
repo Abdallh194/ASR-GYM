@@ -1,0 +1,106 @@
+.WhoWe {
+  margin-top: 30px;
+  padding: 40px 5px;
+  .Info-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .head {
+      font-size: 35px;
+      width: 80%;
+      color: $green-color;
+      margin-top: 12px;
+    }
+    .info {
+      margin-top: 32px;
+    }
+    .more {
+      background-color: $blue-color;
+      color: $gold-color;
+    }
+  }
+  .Image-Card {
+    display: flex;
+    justify-content: center;
+  }
+  .img-fluid {
+    max-width: 65%;
+  }
+
+  .Categories-container {
+    max-width: 1500px;
+    margin-top: 160px;
+  }
+  .Categories-Card {
+    width: calc(100% / 4 - 30px);
+    margin: 5px auto;
+    padding: 30px 10px;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0px 0px 10px #bcbbbb8e;
+    }
+    .icon {
+      padding: 25px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .head {
+      font-size: 23px;
+      padding: 16px 0;
+      font-weight: 600;
+    }
+    .learn {
+      width: 150px;
+      background-color: white;
+      margin: 15px auto;
+      padding: 7px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 26px;
+    }
+  }
+  .GoldCard {
+    background-color: $gold-color;
+    color: $blue-color;
+    margin-top: -95px;
+    height: fit-content;
+    .icon,
+    .learn {
+      background-color: $blue-color;
+      color: $gold-color;
+    }
+  }
+  .greenCard {
+    background-color: $blue-color;
+    color: $gold-color;
+    .icon,
+    .learn {
+      background-color: $gold-color;
+      color: $blue-color;
+    }
+    .desc {
+      color: #ffdf00a8;
+    }
+  }
+  @media (max-width: 992px) {
+    margin-top: 0;
+    .Categories-Card {
+      width: 100%;
+    }
+    .GoldCard {
+      margin-top: 0;
+    }
+    .Info-Card {
+      margin-top: 35px;
+      .head {
+        width: 100%;
+      }
+    }
+    .Categories-container {
+      margin-top: 55px;
+    }
+  }
+}

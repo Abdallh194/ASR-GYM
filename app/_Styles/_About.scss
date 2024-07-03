@@ -1,0 +1,60 @@
+.About {
+  background-color: $darkblue-color;
+  padding: 40px 5px;
+
+  color: white;
+  .img-fluid {
+    display: block;
+    margin: 20px auto;
+  }
+  .Info-Card {
+    .head {
+      margin-top: 45px;
+      font-size: 93px;
+      font-weight: 800;
+      line-height: 1.2;
+      position: relative;
+      margin-left: 43px;
+      span {
+        color: $gold-color;
+        display: block;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 100%;
+        left: -43px;
+        top: 0;
+        background-color: white;
+      }
+    }
+    .desc {
+      width: 75%;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.623);
+      margin-top: 35px;
+    }
+    .membership {
+      margin-top: 25px;
+      .icon {
+        color: $gold-color;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .Info-Card {
+      .head {
+        margin-top: 20px;
+        font-size: 71px;
+      }
+      .desc {
+        width: 100%;
+        font-size: 17px;
+      }
+      p {
+        margin-bottom: 14px !important;
+      }
+    }
+  }
+}

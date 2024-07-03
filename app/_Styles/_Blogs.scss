@@ -1,0 +1,90 @@
+.Blogs {
+  margin-top: 30px;
+  background-color: $darkblue-color;
+  color: white;
+  .img-fluid {
+    height: 100%;
+  }
+  .Info-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    .Icons {
+      display: flex;
+      justify-content: space-around;
+      .icon {
+        background-color: white;
+        color: $darkblue-color;
+        width: 80px;
+        padding: 15px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      span {
+        display: block;
+        font-size: 16px;
+        color: $gold-color;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+    .tripleX {
+      margin-top: 50px;
+      font-size: 38px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+    .head {
+      font-size: 69px;
+      font-weight: 900;
+      margin-top: 15px;
+      line-height: 1.2;
+      span {
+        display: block;
+        color: $gold-color;
+      }
+    }
+    .sub-head {
+      background-color: white;
+      color: $darkblue-color;
+      width: 57%;
+      margin: 20px auto;
+      font-family: "Amatic SC";
+      font-size: 40px;
+    }
+    .desc {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .register {
+      background-color: $gold-color;
+      margin: 20px auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .Info-Card {
+      padding: 40px 5px;
+      .tripleX {
+        margin-top: 15px;
+      }
+      .head {
+        font-size: 60px;
+        line-height: 1.5;
+      }
+      .sub-head,
+      .desc {
+        width: 100%;
+      }
+    }
+
+    .Icons {
+      flex-wrap: wrap;
+      .icon-container {
+        width: 50%;
+        margin-bottom: 27px;
+      }
+    }
+  }
+}

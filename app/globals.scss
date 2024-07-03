@@ -1,0 +1,61 @@
+// bootstrab file
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); //logo font
+
+//vars
+$main-font: "Cairo";
+$logo-font: "Amatic SC";
+$orange-color: #f78536;
+$blue-color: #041e42;
+$darkblue-color: #02081a;
+$gold-color: #ffdf00;
+$green-color: #2c5f2d;
+a {
+  text-decoration: none !important;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: $main-font;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.bg-light {
+  background-color: #f8f9fa00 !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.more {
+  background-color: $gold-color;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  margin-top: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+@import "_Styles/HomePage";
+@import "_Styles/NavScroll";
+@import "_Styles/socials";
+@import "_Styles/About";
+@import "_Styles/WhoWe";
+@import "_Styles/Blogs";
+@import "_Styles/Prices";
+@import "_Styles/Footer";

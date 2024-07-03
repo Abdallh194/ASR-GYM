@@ -1,0 +1,657 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+a {
+  text-decoration: none !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Cairo";
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-light {
+  background-color: rgba(248, 249, 250, 0) !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.more {
+  background-color: #ffdf00;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  margin-top: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.HomePage {
+  color: white;
+  height: 100vh;
+  background: url("/homepage.jpg");
+  background-size: cover;
+  position: relative;
+  background-position-y: 20%;
+}
+.HomePage .overlay {
+  background-image: linear-gradient(to right, rgba(25, 19, 0, 0.4588235294), rgba(0, 0, 255, 0));
+}
+.HomePage .container {
+  max-width: 1620px;
+  margin-top: 135px;
+}
+.HomePage .head {
+  font-size: 78px;
+  font-weight: 700;
+}
+.HomePage .head span {
+  color: #ffdf00;
+}
+.HomePage .desc {
+  width: 65%;
+  margin-top: 23px;
+  margin-left: 6px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.805);
+}
+.HomePage .register-form {
+  display: flex;
+  width: 42%;
+  margin-top: 60px;
+}
+.HomePage .register-form .submit {
+  background-color: #ffdf00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  font-size: 20px;
+  color: black;
+  margin-left: -1px;
+  z-index: 2;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+.HomePage .circle1,
+.HomePage .circle2 {
+  position: absolute;
+}
+.HomePage .circle1 {
+  width: 200px;
+  height: 200px;
+  right: -60px;
+  top: 25%;
+  background-image: linear-gradient(to top, #ffdf00, #f78536);
+  border-radius: 50%;
+}
+@media (max-width: 1400px) {
+  .HomePage .register-form {
+    width: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .HomePage .head {
+    font-size: 65px;
+  }
+  .HomePage .desc,
+  .HomePage .register-form {
+    width: 85%;
+  }
+}
+@media (max-width: 992px) {
+  .HomePage {
+    background-position-x: 80%;
+  }
+  .HomePage .circle1,
+  .HomePage .circle2 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .HomePage {
+    background-position-x: 60%;
+  }
+  .HomePage .desc,
+  .HomePage .register-form {
+    width: 100%;
+  }
+  .HomePage .container {
+    margin-top: 50px;
+  }
+  .HomePage .head {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+  .HomePage .register-form .submit {
+    width: 200px;
+  }
+}
+
+.navbar {
+  background-color: transparent !important;
+  padding: 11px 42px !important;
+  margin-top: 15px;
+}
+.navbar .logo {
+  color: white;
+  font-family: "Amatic SC";
+  font-size: 41px;
+  letter-spacing: 2px;
+}
+.navbar .logo .icon {
+  font-size: 35px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.navbar .links a {
+  margin: 0 40px;
+  color: rgba(255, 255, 255, 0.615);
+  font-size: 17px;
+}
+.navbar .links .Active {
+  color: #ffdf00;
+  font-weight: bold;
+}
+.navbar .me-auto {
+  margin-left: 170px;
+}
+.navbar .contacts .btn {
+  background-color: #ffdf00;
+  margin-right: 40px;
+  border-radius: 0;
+  font-weight: bold;
+  color: black;
+}
+.navbar .navbar-toggler {
+  border: 1px solid rgb(255, 255, 255);
+}
+@media (max-width: 1400px) {
+  .navbar .me-auto {
+    margin-left: 89px;
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar .links a {
+    margin: 0 18px;
+  }
+  .navbar .me-auto {
+    margin-left: 65px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .contacts {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0 !important;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: 110px;
+}
+.socials .socials-head {
+  font-size: 19px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.socials .socials-icon {
+  display: flex;
+  width: 222px;
+  justify-content: space-between;
+}
+.socials .icon {
+  color: black;
+  background-color: #ffdf00;
+  padding: 4px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .socials {
+    margin-top: 60px;
+  }
+}
+
+.About {
+  background-color: #02081a;
+  padding: 40px 5px;
+  color: white;
+}
+.About .img-fluid {
+  display: block;
+  margin: 20px auto;
+}
+.About .Info-Card .head {
+  margin-top: 45px;
+  font-size: 93px;
+  font-weight: 800;
+  line-height: 1.2;
+  position: relative;
+  margin-left: 43px;
+}
+.About .Info-Card .head span {
+  color: #ffdf00;
+  display: block;
+}
+.About .Info-Card .head::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 100%;
+  left: -43px;
+  top: 0;
+  background-color: white;
+}
+.About .Info-Card .desc {
+  width: 75%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.623);
+  margin-top: 35px;
+}
+.About .Info-Card .membership {
+  margin-top: 25px;
+}
+.About .Info-Card .membership .icon {
+  color: #ffdf00;
+}
+@media (max-width: 1200px) {
+  .About .Info-Card .head {
+    margin-top: 20px;
+    font-size: 71px;
+  }
+  .About .Info-Card .desc {
+    width: 100%;
+    font-size: 17px;
+  }
+  .About .Info-Card p {
+    margin-bottom: 14px !important;
+  }
+}
+
+.WhoWe {
+  margin-top: 30px;
+  padding: 40px 5px;
+}
+.WhoWe .Info-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.WhoWe .Info-Card .head {
+  font-size: 35px;
+  width: 80%;
+  color: #2c5f2d;
+  margin-top: 12px;
+}
+.WhoWe .Info-Card .info {
+  margin-top: 32px;
+}
+.WhoWe .Info-Card .more {
+  background-color: #041e42;
+  color: #ffdf00;
+}
+.WhoWe .Image-Card {
+  display: flex;
+  justify-content: center;
+}
+.WhoWe .img-fluid {
+  max-width: 65%;
+}
+.WhoWe .Categories-container {
+  max-width: 1500px;
+  margin-top: 160px;
+}
+.WhoWe .Categories-Card {
+  width: calc(25% - 30px);
+  margin: 5px auto;
+  padding: 30px 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.WhoWe .Categories-Card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 10px rgba(188, 187, 187, 0.5568627451);
+}
+.WhoWe .Categories-Card .icon {
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.WhoWe .Categories-Card .head {
+  font-size: 23px;
+  padding: 16px 0;
+  font-weight: 600;
+}
+.WhoWe .Categories-Card .learn {
+  width: 150px;
+  background-color: white;
+  margin: 15px auto;
+  padding: 7px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 26px;
+}
+.WhoWe .GoldCard {
+  background-color: #ffdf00;
+  color: #041e42;
+  margin-top: -95px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.WhoWe .GoldCard .icon,
+.WhoWe .GoldCard .learn {
+  background-color: #041e42;
+  color: #ffdf00;
+}
+.WhoWe .greenCard {
+  background-color: #041e42;
+  color: #ffdf00;
+}
+.WhoWe .greenCard .icon,
+.WhoWe .greenCard .learn {
+  background-color: #ffdf00;
+  color: #041e42;
+}
+.WhoWe .greenCard .desc {
+  color: rgba(255, 223, 0, 0.6588235294);
+}
+@media (max-width: 992px) {
+  .WhoWe {
+    margin-top: 0;
+  }
+  .WhoWe .Categories-Card {
+    width: 100%;
+  }
+  .WhoWe .GoldCard {
+    margin-top: 0;
+  }
+  .WhoWe .Info-Card {
+    margin-top: 35px;
+  }
+  .WhoWe .Info-Card .head {
+    width: 100%;
+  }
+  .WhoWe .Categories-container {
+    margin-top: 55px;
+  }
+}
+
+.Blogs {
+  margin-top: 30px;
+  background-color: #02081a;
+  color: white;
+}
+.Blogs .img-fluid {
+  height: 100%;
+}
+.Blogs .Info-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+.Blogs .Info-Card .Icons {
+  display: flex;
+  justify-content: space-around;
+}
+.Blogs .Info-Card .Icons .icon {
+  background-color: white;
+  color: #02081a;
+  width: 80px;
+  padding: 15px;
+  height: 80px;
+  border-radius: 50%;
+}
+.Blogs .Info-Card .Icons span {
+  display: block;
+  font-size: 16px;
+  color: #ffdf00;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.Blogs .Info-Card .tripleX {
+  margin-top: 50px;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.Blogs .Info-Card .head {
+  font-size: 69px;
+  font-weight: 900;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+.Blogs .Info-Card .head span {
+  display: block;
+  color: #ffdf00;
+}
+.Blogs .Info-Card .sub-head {
+  background-color: white;
+  color: #02081a;
+  width: 57%;
+  margin: 20px auto;
+  font-family: "Amatic SC";
+  font-size: 40px;
+}
+.Blogs .Info-Card .desc {
+  width: 80%;
+  margin: 20px auto;
+}
+.Blogs .Info-Card .register {
+  background-color: #ffdf00;
+  margin: 20px auto;
+}
+@media (max-width: 767px) {
+  .Blogs .Info-Card {
+    padding: 40px 5px;
+  }
+  .Blogs .Info-Card .tripleX {
+    margin-top: 15px;
+  }
+  .Blogs .Info-Card .head {
+    font-size: 60px;
+    line-height: 1.5;
+  }
+  .Blogs .Info-Card .sub-head,
+  .Blogs .Info-Card .desc {
+    width: 100%;
+  }
+  .Blogs .Icons {
+    flex-wrap: wrap;
+  }
+  .Blogs .Icons .icon-container {
+    width: 50%;
+    margin-bottom: 27px;
+  }
+}
+
+.Prices {
+  margin-top: 20px;
+  padding: 40px 0;
+}
+.Prices .head {
+  font-size: 37px;
+  font-weight: 800;
+}
+.Prices .desc-Row {
+  margin-top: 30px;
+}
+.Prices .desc-Row .desc {
+  font-size: 19px;
+  color: rgba(31, 30, 30, 0.768627451);
+}
+.Prices .desc-Row .powers p {
+  margin-bottom: 6px;
+}
+.Prices .desc-Row .powers .icon {
+  color: #041e42;
+}
+.Prices .NewsCard {
+  padding: 30px 20px 0px 20px;
+  border: 1px solid red;
+  width: calc(33.3333333333% - 30px);
+  margin: 20px auto;
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 7px;
+  position: relative;
+  border: 2px solid #041e42;
+}
+.Prices .NewsCard .price {
+  font-size: 33px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.Prices .NewsCard .price small {
+  font-size: 1rem;
+}
+.Prices .NewsCard .cardHeader {
+  text-align: left;
+  font-size: 28px;
+  font-weight: 500;
+}
+.Prices .NewsCard .desc {
+  margin-top: 15px;
+}
+.Prices .NewsCard .more {
+  margin: 20px auto;
+  margin-top: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 17px;
+  padding: 7px 23px;
+  border-radius: 7px;
+  background-color: #041e42;
+  color: #ffdf00;
+}
+.Prices .NewsCard .popular {
+  position: absolute;
+  width: 95px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  top: -31px;
+  background-color: #f78536;
+}
+.Prices .NewsCard .popular::before {
+  position: absolute;
+  content: "";
+  border: 10px solid transparent;
+  border-top-color: #f78536;
+  left: 50%;
+  bottom: -19px;
+  transform: translateX(-50%);
+}
+.Prices .NewsCard .save {
+  position: absolute;
+  background-color: #041e42;
+  color: #ffdf00;
+  top: 34px;
+  padding: 3px 20px;
+  right: 15px;
+  border-radius: 26px;
+}
+.Prices .GoldCard {
+  border-color: #f78536;
+}
+.Prices .GoldCard .more {
+  background-color: #f78536;
+  color: #041e42;
+}
+@media (max-width: 992px) {
+  .Prices {
+    padding: 40px 7px;
+  }
+  .Prices .NewsCard {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .Prices .GoldCard {
+    margin-top: 55px;
+  }
+  .Prices .desc {
+    margin-bottom: 15px;
+  }
+}
+
+footer {
+  background-color: #041e42;
+  color: white;
+}
+footer .Fooer-Card {
+  margin: 50px 0;
+}
+footer .head {
+  font-size: 29px;
+  color: #ffdf00;
+}
+footer .desc {
+  padding: 20px 0;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.718);
+  width: 90%;
+}
+footer .Details {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 11px;
+  margin-left: 30px;
+}
+footer .icon {
+  color: #ffdf00;
+  font-size: 28px;
+  display: block;
+  margin-top: 18px;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 30px 0;
+  }
+  footer .Details {
+    font-size: 18px;
+    margin-left: 18px;
+  }
+  footer .Fooer-Card {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=globals.css.map */

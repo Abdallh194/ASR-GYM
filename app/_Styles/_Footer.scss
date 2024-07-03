@@ -1,0 +1,40 @@
+footer {
+  background-color: $blue-color;
+  color: white;
+
+  .Fooer-Card {
+    margin: 50px 0;
+  }
+  .head {
+    font-size: 29px;
+    color: $gold-color;
+  }
+  .desc {
+    padding: 20px 0;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.718);
+    width: 90%;
+  }
+  .Details {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    margin-left: 30px;
+  }
+  .icon {
+    color: $gold-color;
+    font-size: 28px;
+    display: block;
+    margin-top: 18px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 0;
+    .Details {
+      font-size: 18px;
+      margin-left: 18px;
+    }
+    .Fooer-Card {
+      margin: 20px 0;
+    }
+  }
+}

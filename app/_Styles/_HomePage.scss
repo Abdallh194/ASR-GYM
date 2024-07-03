@@ -1,0 +1,102 @@
+.HomePage {
+  color: white;
+  height: 100vh;
+  background: url("/homepage.jpg");
+  background-size: cover;
+  position: relative;
+  background-position-y: 20%;
+  .overlay {
+    background-image: linear-gradient(to right, #19130075, rgba(0, 0, 255, 0));
+  }
+  .container {
+    max-width: 1620px;
+    margin-top: 135px;
+  }
+  .head {
+    font-size: 78px;
+    font-weight: 700;
+
+    span {
+      color: $gold-color;
+    }
+  }
+  .desc {
+    width: 65%;
+    margin-top: 23px;
+    margin-left: 6px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.805);
+  }
+  .register-form {
+    display: flex;
+    width: 42%;
+    margin-top: 60px;
+    .submit {
+      background-color: $gold-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      font-size: 20px;
+      color: black;
+      margin-left: -1px;
+      z-index: 2;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  .circle1,
+  .circle2 {
+    position: absolute;
+  }
+  .circle1 {
+    width: 200px;
+    height: 200px;
+    right: -60px;
+    top: 25%;
+    background-image: linear-gradient(to top, $gold-color, $orange-color);
+    border-radius: 50%;
+  }
+  @media (max-width: 1400px) {
+    .register-form {
+      width: 60%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .head {
+      font-size: 65px;
+    }
+    .desc,
+    .register-form {
+      width: 85%;
+    }
+  }
+  @media (max-width: 992px) {
+    background-position-x: 80%;
+    .circle1,
+    .circle2 {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    background-position-x: 60%;
+    .desc,
+    .register-form {
+      width: 100%;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .head {
+      font-size: 68px;
+      font-weight: 900;
+      line-height: 1.3;
+    }
+    .register-form {
+      .submit {
+        width: 200px;
+      }
+    }
+  }
+}
