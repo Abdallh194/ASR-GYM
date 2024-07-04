@@ -4,7 +4,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import ClearIcon from "@mui/icons-material/Clear";
 const Prices = () => {
   return (
-    <div className="Prices">
+    <div className="Prices" id="Pricing">
       <Container>
         <div className="head">Pricing</div>
         <Row className="desc-Row">

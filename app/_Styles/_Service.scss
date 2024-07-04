@@ -1,0 +1,75 @@
+.Service {
+  padding: 40px 0;
+  text-align: center;
+  .head {
+    font-size: 56px;
+    color: $blue-color;
+    font-weight: 300;
+  }
+  .Service-Card {
+    margin-top: 60px;
+    .img-fluid {
+      height: 100%;
+    }
+    .leftCard {
+      padding: 29px 20px;
+      .header {
+        font-size: 30px;
+        font-weight: 300;
+      }
+      .desc {
+        padding: 10px 0;
+      }
+      .subscribe {
+        width: fit-content;
+        margin: 20px auto;
+        padding: 8px 19px;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+    }
+    .Gary {
+      background-color: #ccd3db;
+      .subscribe {
+        background-color: black;
+        color: white;
+      }
+    }
+    .Blue {
+      background-color: $blue-color;
+      color: white;
+      .desc {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .subscribe {
+        background-color: white;
+        color: black;
+      }
+    }
+    .Dark {
+      background-color: #858e99;
+      color: white;
+      .subscribe {
+        background-color: white;
+        color: black;
+      }
+    }
+    .Gold {
+      background-color: $gold-color;
+      color: $blue-color;
+      .subscribe {
+        background-color: $blue-color;
+        color: $gold-color;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .Service-Card {
+      padding: 0;
+      margin-top: 20px;
+      .leftCard {
+        padding: 20px;
+      }
+    }
+  }
+}

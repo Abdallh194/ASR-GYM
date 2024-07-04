@@ -23,20 +23,6 @@ body {
   background-color: rgba(248, 249, 250, 0) !important;
 }
 
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: white !important;
-}
-
-.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
-  border-radius: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
 .more {
   background-color: #ffdf00;
   width: 200px;
@@ -48,6 +34,18 @@ body {
   cursor: pointer;
 }
 
+.CopyRight {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .CopyRight {
+    text-align: center;
+    display: block;
+  }
+}
 .HomePage {
   color: white;
   height: 100vh;
@@ -81,6 +79,12 @@ body {
   display: flex;
   width: 42%;
   margin-top: 60px;
+}
+.HomePage .register-form .form-control {
+  height: 52px;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .HomePage .register-form .submit {
   background-color: #ffdf00;
@@ -146,6 +150,9 @@ body {
     font-size: 68px;
     font-weight: 900;
     line-height: 1.3;
+  }
+  .HomePage .register-form {
+    margin-top: 45px;
   }
   .HomePage .register-form .submit {
     width: 200px;
@@ -241,7 +248,7 @@ body {
 }
 @media (max-width: 767px) {
   .socials {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 }
 
@@ -287,6 +294,9 @@ body {
 .About .Info-Card .membership .icon {
   color: #ffdf00;
 }
+.About .Info-Card .more {
+  display: block;
+}
 @media (max-width: 1200px) {
   .About .Info-Card .head {
     margin-top: 20px;
@@ -298,6 +308,11 @@ body {
   }
   .About .Info-Card p {
     margin-bottom: 14px !important;
+  }
+}
+@media (max-width: 767px) {
+  .About .Info-Card .membership {
+    font-size: 13px;
   }
 }
 
@@ -494,6 +509,9 @@ body {
   .Blogs .Icons {
     flex-wrap: wrap;
   }
+  .Blogs .Icons span {
+    font-size: 14px;
+  }
   .Blogs .Icons .icon-container {
     width: 50%;
     margin-bottom: 27px;
@@ -615,7 +633,7 @@ body {
 }
 
 footer {
-  background-color: #041e42;
+  background-color: #02081a;
   color: white;
 }
 footer .Fooer-Card {
@@ -653,5 +671,204 @@ footer .icon {
   }
   footer .Fooer-Card {
     margin: 20px 0;
+  }
+}
+
+.Register {
+  height: 100vh;
+  background: url("/register.jpg");
+  background-size: cover;
+  background-position-y: 20%;
+  position: relative;
+}
+.Register .overlay {
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.Register .content {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Register .content .head {
+  font-size: 130px;
+  font-weight: 300;
+  position: relative;
+}
+.Register .content .head::before {
+  position: absolute;
+  content: "";
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 60px solid rgba(255, 68, 0, 0.574);
+  border-radius: 50%;
+  z-index: -1;
+}
+.Register .content .desc {
+  color: #9e9e9e;
+  margin-top: -30px;
+}
+@media (max-width: 767px) {
+  .Register {
+    background-position-x: 75%;
+  }
+  .Register .content .head {
+    font-size: 100px;
+  }
+  .Register .content .head::before {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .Register {
+    background-position-x: 65%;
+  }
+  .Register .content .head {
+    font-size: 66px;
+  }
+  .Register .content .head::before {
+    border: 38px solid rgba(255, 68, 0, 0.574);
+    height: 320px;
+    width: 320px;
+  }
+  .Register .content .desc {
+    margin-top: -15px;
+    font-size: 15px;
+  }
+}
+
+.Service {
+  padding: 40px 0;
+  text-align: center;
+}
+.Service .head {
+  font-size: 56px;
+  color: #041e42;
+  font-weight: 300;
+}
+.Service .Service-Card {
+  margin-top: 60px;
+}
+.Service .Service-Card .img-fluid {
+  height: 100%;
+}
+.Service .Service-Card .leftCard {
+  padding: 29px 20px;
+}
+.Service .Service-Card .leftCard .header {
+  font-size: 30px;
+  font-weight: 300;
+}
+.Service .Service-Card .leftCard .desc {
+  padding: 10px 0;
+}
+.Service .Service-Card .leftCard .subscribe {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 8px 19px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.Service .Service-Card .Gary {
+  background-color: #ccd3db;
+}
+.Service .Service-Card .Gary .subscribe {
+  background-color: black;
+  color: white;
+}
+.Service .Service-Card .Blue {
+  background-color: #041e42;
+  color: white;
+}
+.Service .Service-Card .Blue .desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.Service .Service-Card .Blue .subscribe {
+  background-color: white;
+  color: black;
+}
+.Service .Service-Card .Dark {
+  background-color: #858e99;
+  color: white;
+}
+.Service .Service-Card .Dark .subscribe {
+  background-color: white;
+  color: black;
+}
+.Service .Service-Card .Gold {
+  background-color: #ffdf00;
+  color: #041e42;
+}
+.Service .Service-Card .Gold .subscribe {
+  background-color: #041e42;
+  color: #ffdf00;
+}
+@media (max-width: 767px) {
+  .Service .Service-Card {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Service .Service-Card .leftCard {
+    padding: 20px;
+  }
+}
+
+.RegisterationForm {
+  background-color: #02081a;
+  color: white;
+}
+.RegisterationForm .Form-Card {
+  padding: 50px;
+}
+.RegisterationForm .RegiserForm .img-fluid {
+  height: 100%;
+}
+.RegisterationForm .RegiserForm .head {
+  color: #ffdf00;
+  margin-top: 20px;
+  font-family: "Amatic SC";
+  font-size: 85px;
+}
+.RegisterationForm .RegiserForm .desc {
+  color: rgba(255, 255, 255, 0.606);
+}
+.RegisterationForm .RegiserForm .Form {
+  margin-top: 40px;
+}
+.RegisterationForm .RegiserForm .Form .form-control,
+.RegisterationForm .RegiserForm .Form select,
+.RegisterationForm .RegiserForm .Form .input-group-text {
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.RegisterationForm .RegiserForm .Form .invalid-feedback {
+  margin-top: -14px;
+  line-height: 2;
+}
+.RegisterationForm .RegiserForm .Form #submit {
+  width: 110px;
+}
+@media (max-width: 992px) {
+  .RegisterationForm .RegiserForm .img-fluid {
+    display: block;
+    margin: auto auto;
+  }
+}
+@media (max-width: 767px) {
+  .RegisterationForm .RegiserForm .head,
+  .RegisterationForm .RegiserForm .desc {
+    text-align: center;
+  }
+  .RegisterationForm .Form-Card {
+    padding: 20px 5px;
   }
 }/*# sourceMappingURL=globals.css.map */

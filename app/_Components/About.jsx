@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import CheckIcon from "@mui/icons-material/Check";
+import Link from "next/link";
 const About = () => {
   return (
-    <div className="About">
+    <div className="About" id="About">
       <Container>
         <Row>
           <Col xs={12} md={12} lg={5} className="About-Card Image-Card">
@@ -48,7 +49,10 @@ const About = () => {
                 consectetur, adipisicing elit.
               </p>
             </div>
-            <div className="more">Read More</div>
+            <Link href="/Register" className="more">
+              {" "}
+              Register
+            </Link>
           </Col>
         </Row>
       </Container>

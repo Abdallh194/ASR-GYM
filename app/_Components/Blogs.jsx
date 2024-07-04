@@ -8,15 +8,16 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import Link from "next/link";
 const Blogs = () => {
   return (
-    <div className="Blogs">
+    <div className="Blogs" id="Blog">
       <Container fluid>
         <Row>
           <Col xs={12} md={12} lg={6} className="Blogs-Card Info-Card">
             <div className="Icons">
               <div className="icon-container">
-                <FitnessCenterIcon className="icon" />
-                <span>Latest Devices</span>
+                <AcUnitIcon className="icon" />
+                <span>Central Air-Conditioning</span>
               </div>
+
               <div className="icon-container">
                 <BuildCircleIcon className="icon" />
                 <span>Device Maintenance</span>
@@ -26,8 +27,8 @@ const Blogs = () => {
                 <span>Electrical Device</span>
               </div>
               <div className="icon-container">
-                <AcUnitIcon className="icon" />
-                <span>Central Air-Conditioning</span>
+                <FitnessCenterIcon className="icon" />
+                <span>Latest Devices</span>
               </div>
             </div>
             <div className="tripleX">X X X</div>

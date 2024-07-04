@@ -1,0 +1,57 @@
+.RegisterationForm {
+  background-color: $darkblue-color;
+  color: white;
+  .Form-Card {
+    padding: 50px;
+  }
+  .RegiserForm {
+    .img-fluid {
+      height: 100%;
+    }
+    .head {
+      color: $gold-color;
+      margin-top: 20px;
+      font-family: $logo-font;
+      font-size: 85px;
+    }
+    .desc {
+      color: rgba(255, 255, 255, 0.606);
+    }
+    .Form {
+      margin-top: 40px;
+      .form-control,
+      select,
+      .input-group-text {
+        height: 50px;
+        margin-bottom: 20px;
+        border-radius: 04px;
+      }
+      .invalid-feedback {
+        margin-top: -14px;
+        line-height: 2;
+      }
+      #submit {
+        width: 110px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .RegiserForm {
+      .img-fluid {
+        display: block;
+        margin: auto auto;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .RegiserForm {
+      .head,
+      .desc {
+        text-align: center;
+      }
+    }
+    .Form-Card {
+      padding: 20px 5px;
+    }
+  }
+}

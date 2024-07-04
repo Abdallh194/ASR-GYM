@@ -41,6 +41,9 @@
         color: $gold-color;
       }
     }
+    .more {
+      display: block;
+    }
   }
   @media (max-width: 1200px) {
     .Info-Card {
@@ -54,6 +57,13 @@
       }
       p {
         margin-bottom: 14px !important;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .Info-Card {
+      .membership {
+        font-size: 13px;
       }
     }
   }

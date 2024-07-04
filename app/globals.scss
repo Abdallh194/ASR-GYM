@@ -30,17 +30,6 @@ body {
   background-color: #f8f9fa00 !important;
 }
 
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: white !important;
-}
-.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
-  border-radius: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
 .more {
   background-color: $gold-color;
   width: 200px;
@@ -51,6 +40,17 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+.CopyRight {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .CopyRight {
+    text-align: center;
+    display: block;
+  }
+}
 @import "_Styles/HomePage";
 @import "_Styles/NavScroll";
 @import "_Styles/socials";
@@ -59,3 +59,6 @@ body {
 @import "_Styles/Blogs";
 @import "_Styles/Prices";
 @import "_Styles/Footer";
+@import "_Styles/Register";
+@import "_Styles/Service";
+@import "_Styles/RegisterationForm";

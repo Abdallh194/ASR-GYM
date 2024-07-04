@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Categories from "./Categories";
+import Link from "next/link";
 
 const WhoWe = () => {
   return (
@@ -29,7 +30,10 @@ const WhoWe = () => {
               maxime amet exercitationem corporis veritatis accusamus omnis non
               nostrum rem. Natus, aut?
             </div>
-            <div className="more">Read More</div>
+            <Link href="/Register" className="more">
+              {" "}
+              Register
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -28,9 +28,9 @@ function NavScrollExample() {
               Home
             </Link>
             <Link href="#About">Who We Are</Link>
-            <Link href="/Shop">Blog</Link>
-            <Link href="/Cart"> News</Link>
-            <Link href="/Stories"> Store</Link>
+            <Link href="#Blog">Blog</Link>
+            <Link href="#Pricing"> Pricing</Link>
+            <Link href="/Exercise"> Exercise</Link>
           </Nav>
           <div className="d-flex contacts">
             <Link href="/Contact" className="btn">

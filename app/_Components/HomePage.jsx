@@ -1,7 +1,7 @@
 import React from "react";
 import NavScroll from "./NavScroll";
 import { TextField } from "@mui/material";
-import { Container } from "react-bootstrap";
+import { Container, FormControl } from "react-bootstrap";
 import Link from "next/link";
 import Socials from "./Socials";
 
@@ -22,15 +22,8 @@ const HomePage = () => {
             adipisicing elit. Architecto fugit quos
           </div>
           <div className="register-form">
-            <TextField
-              required
-              fullWidth
-              id="email"
-              label=" Email Address"
-              name="email"
-              autoComplete="email"
-            />
-            <Link href="/Login" className="submit">
+            <FormControl type="email" placeholder="Your Email .... " />
+            <Link href="/Register" className="submit">
               Register
             </Link>
           </div>

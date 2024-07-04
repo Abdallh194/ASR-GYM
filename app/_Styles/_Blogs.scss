@@ -81,6 +81,9 @@
 
     .Icons {
       flex-wrap: wrap;
+      span {
+        font-size: 14px;
+      }
       .icon-container {
         width: 50%;
         margin-bottom: 27px;
