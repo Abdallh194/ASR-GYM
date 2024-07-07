@@ -1,0 +1,115 @@
+.Exercise {
+  background: url("/exercise_svg.png");
+  height: 920px;
+  color: white;
+  .navbar {
+    margin-top: 0;
+  }
+  .head {
+    font-size: 100px;
+    font-weight: bold;
+
+    span {
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(aqua),
+        color-stop(20%, aqua),
+        color-stop(40%, aqua),
+        color-stop(60%, #c300ff),
+        color-stop(80%, #ff00fa),
+        to(#ff00fa)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .desc {
+    line-height: 3;
+    color: rgba(255, 255, 255, 0.458);
+  }
+  .Info-Card {
+    margin-top: 100px;
+    padding-left: 130px;
+    .customer-Number {
+      margin-top: 20px;
+      display: flex;
+      font-family: $logo-font;
+      justify-content: space-between;
+      .num {
+        background-color: white;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: $blue-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        margin: 5px auto;
+      }
+      .number-head {
+        font-size: 28px;
+      }
+    }
+  }
+  .Image-Card {
+    margin-top: 50px;
+    .img-fluid {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  @media (max-width: 1700px) {
+    .Info-Card {
+      padding-left: 50px;
+      .head {
+        font-size: 81px;
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .Info-Card {
+      .head {
+        font-size: 67px;
+      }
+      .desc {
+        line-height: 1.5;
+      }
+    }
+    .Image-Card {
+      display: flex;
+    }
+  }
+  @media (max-width: 1200px) {
+    .Info-Card {
+      padding-left: 10px;
+      .head {
+        font-size: 55px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    height: fit-content;
+  }
+  @media (max-width: 767px) {
+    .Info-Card {
+      margin-top: 50px;
+      .head {
+        font-size: 47px;
+      }
+      .desc {
+        margin-top: 20px;
+      }
+      .customer-Number {
+        .number-head {
+          font-size: 22px;
+        }
+      }
+    }
+    .Image-Card {
+      margin: 55px 0;
+    }
+  }
+}

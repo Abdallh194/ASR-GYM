@@ -3,6 +3,9 @@
   color: white;
   .Form-Card {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .RegiserForm {
     .img-fluid {
@@ -32,6 +35,10 @@
       }
       #submit {
         width: 110px;
+      }
+      .haveAccount {
+        text-decoration: underline !important;
+        cursor: pointer;
       }
     }
   }

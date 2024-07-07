@@ -1,8 +1,7 @@
-const url = "https://exercisedb.p.rapidapi.com/status";
 export const ExersiceOptions = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": process.env.REACT_APP_RAPIED_KEY,
+    "x-rapidapi-key": "9b7928c1d2msha124e05e4b043abp1ede7bjsnbf13cd325843",
     "x-rapidapi-host": "exercisedb.p.rapidapi.com",
   },
 };

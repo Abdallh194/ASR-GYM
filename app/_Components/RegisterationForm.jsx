@@ -5,7 +5,7 @@ import FormRegister from "./FormRegister";
 
 const RegisterationForm = () => {
   return (
-    <div className="RegisterationForm">
+    <div className="RegisterationForm" id="RegisterationForm">
       <Container fluid>
         <Row>
           <Col md={12} lg={6} className="RegiserForm Form-Card">

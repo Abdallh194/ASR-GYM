@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
-import Button from "react-bootstrap/Button";
+
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import { Avatar } from "@mui/material";
 function NavScrollExample() {
@@ -33,7 +33,7 @@ function NavScrollExample() {
             <Link href="/Exercise"> Exercise</Link>
           </Nav>
           <div className="d-flex contacts">
-            <Link href="/Contact" className="btn">
+            <Link href="/" className="btn">
               Contact
             </Link>
             <Avatar />

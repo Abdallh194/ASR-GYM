@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import EastIcon from "@mui/icons-material/East";
+import Link from "next/link";
 const Service = () => {
   return (
     <div className="Service">
@@ -20,9 +21,9 @@ const Service = () => {
                 Here you will find the best trainers and the best and latest
                 equipment to build muscles and provide the best diet
               </div>
-              <div className="subscribe">
+              <Link href="#RegisterationForm" className="subscribe">
                 Subscribe <EastIcon />
-              </div>
+              </Link>
             </div>
             <div className="leftCard Blue">
               <div className="header">Thinness and obesity</div>
@@ -30,9 +31,9 @@ const Service = () => {
                 Here you will find the best trainers and the best and latest
                 equipment to build muscles and provide the best diet
               </div>
-              <div className="subscribe">
+              <Link href="#RegisterationForm" className="subscribe">
                 Subscribe <EastIcon />
-              </div>
+              </Link>
             </div>
           </Col>
           <Col md={12} lg={4} className="Service-Card">
@@ -51,9 +52,9 @@ const Service = () => {
                 Here you will find the best trainers and the best and latest
                 equipment to build muscles and provide the best diet
               </div>
-              <div className="subscribe">
+              <Link href="#RegisterationForm" className="subscribe">
                 Subscribe <EastIcon />
-              </div>
+              </Link>
             </div>
             <div className="leftCard Gold">
               <div className="header">Thinness and obesity</div>
@@ -61,9 +62,9 @@ const Service = () => {
                 Here you will find the best trainers and the best and latest
                 equipment to build muscles and provide the best diet
               </div>
-              <div className="subscribe">
+              <Link href="#RegisterationForm" className="subscribe">
                 Subscribe <EastIcon />
-              </div>
+              </Link>
             </div>
           </Col>
         </Row>

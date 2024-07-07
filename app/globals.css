@@ -202,6 +202,9 @@ body {
     margin-left: 89px;
     margin-top: 0 !important;
   }
+  .navbar .links a {
+    margin: 0 34px;
+  }
 }
 @media (max-width: 1200px) {
   .navbar .links a {
@@ -776,6 +779,7 @@ footer .icon {
   padding: 8px 19px;
   font-weight: 600;
   border-radius: 5px;
+  display: block;
 }
 .Service .Service-Card .Gary {
   background-color: #ccd3db;
@@ -827,6 +831,9 @@ footer .icon {
 }
 .RegisterationForm .Form-Card {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .RegisterationForm .RegiserForm .img-fluid {
   height: 100%;
@@ -857,6 +864,10 @@ footer .icon {
 .RegisterationForm .RegiserForm .Form #submit {
   width: 110px;
 }
+.RegisterationForm .RegiserForm .Form .haveAccount {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
 @media (max-width: 992px) {
   .RegisterationForm .RegiserForm .img-fluid {
     display: block;
@@ -871,4 +882,333 @@ footer .icon {
   .RegisterationForm .Form-Card {
     padding: 20px 5px;
   }
+}
+
+.UserProfile .leftSideBar {
+  padding-left: 30px;
+  background-color: #02081a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+}
+.UserProfile .leftSideBar .logo {
+  color: #ffdf00;
+  font-family: "Amatic SC";
+  font-size: 80px;
+}
+.UserProfile .leftSideBar .logo .icon {
+  font-size: 60px;
+}
+.UserProfile .leftSideBar .menu {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+.UserProfile .leftSideBar .menu .head {
+  margin-top: 9px;
+  cursor: pointer;
+}
+.UserProfile .leftSideBar .socials .socials-head {
+  display: none;
+}
+.UserProfile .leftSideBar .socials .icon {
+  background-color: white;
+  border-radius: 50%;
+}
+.UserProfile .RightSideBar {
+  position: relative;
+  left: 25%;
+  padding: 0;
+}
+.UserProfile .RightSideBar .linerImage {
+  height: 300px;
+  background-image: url("/register.jpg");
+  background-position-y: center;
+  position: relative;
+  font-weight: 900;
+  color: rgba(253, 253, 253, 0.6901960784);
+  font-size: 87px;
+  background-size: cover;
+}
+.UserProfile .RightSideBar .linerImage .overlay {
+  background-image: linear-gradient(45deg, rgba(255, 254, 0, 0.3215686275), rgba(0, 60, 255, 0.368627451));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserProfile .avatar {
+  background-color: #c7c7c7;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 200px;
+  border: 15px solid white;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin-top: -100px;
+  transform: translateX(-50%);
+}
+.UserProfile .content {
+  padding: 40px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.UserProfile .content .logout {
+  position: absolute;
+  top: 40px;
+  border-radius: 5px;
+  right: 40px;
+  background-color: red;
+  color: white;
+  padding: 5px 11px;
+  cursor: pointer;
+}
+.UserProfile .content .head {
+  font-size: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.UserProfile .content .head::before {
+  position: absolute;
+  content: "";
+  background-color: #f78536;
+  height: 2px;
+  width: 30%;
+  left: 0;
+  bottom: 0;
+}
+.UserProfile .content .personalInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.UserProfile .content .details-head {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.UserProfile .content .activationBtn {
+  font-weight: bold;
+  text-decoration: underline !important;
+  color: black;
+  padding: 4px 9px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline;
+  cursor: pointer;
+}
+.UserProfile .content .card-content {
+  background-color: transparent !important;
+  border: none;
+  width: 70%;
+  margin: 20px auto;
+  margin-top: 30px;
+  padding: 0;
+}
+.UserProfile .content .card-content .input {
+  border-radius: 4px;
+  height: 55px;
+  background-color: white;
+}
+@media (max-width: 1200px) {
+  .UserProfile .leftSideBar {
+    padding-left: 5px;
+  }
+  .UserProfile .leftSideBar .logo {
+    font-size: 46px;
+  }
+  .UserProfile .leftSideBar .logo .icon {
+    font-size: 35px;
+  }
+  .UserProfile .leftSideBar .menu {
+    font-size: 17px;
+  }
+  .UserProfile .leftSideBar .menu .head {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .UserProfile .row {
+    flex-direction: column-reverse;
+  }
+  .UserProfile .leftSideBar {
+    position: relative;
+  }
+  .UserProfile .RightSideBar {
+    left: 0;
+  }
+  .UserProfile .content {
+    width: 100%;
+  }
+  .UserProfile .content .card-content {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .UserProfile .leftSideBar {
+    text-align: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px 0;
+  }
+  .UserProfile .leftSideBar .logo {
+    font-size: 87px;
+  }
+  .UserProfile .leftSideBar .logo .icon {
+    font-size: 67px;
+    margin-right: 7px;
+  }
+  .UserProfile .leftSideBar .menu {
+    margin-top: 7px;
+  }
+  .UserProfile .socials {
+    justify-content: center;
+  }
+  .UserProfile .RightSideBar .linerImage {
+    font-size: 47px;
+    height: 250px;
+  }
+  .UserProfile .avatar {
+    width: 160px;
+    height: 160px;
+    margin-top: -80px;
+  }
+  .UserProfile .content {
+    padding: 40px 15px;
+  }
+  .UserProfile .content .head {
+    font-size: 23px;
+  }
+  .UserProfile .content .logout {
+    right: 5px;
+  }
+  .UserProfile .content .details-head {
+    margin-top: 21px;
+  }
+  .UserProfile .content .personalInfo {
+    display: block;
+  }
+}
+
+.Exercise {
+  background: url("/exercise_svg.png");
+  height: 920px;
+  color: white;
+}
+.Exercise .navbar {
+  margin-top: 0;
+}
+.Exercise .head {
+  font-size: 100px;
+  font-weight: bold;
+}
+.Exercise .head span {
+  background: -webkit-gradient(linear, left top, right top, from(aqua), color-stop(20%, aqua), color-stop(40%, aqua), color-stop(60%, #c300ff), color-stop(80%, #ff00fa), to(#ff00fa));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Exercise .desc {
+  line-height: 3;
+  color: rgba(255, 255, 255, 0.458);
+}
+.Exercise .Info-Card {
+  margin-top: 100px;
+  padding-left: 130px;
+}
+.Exercise .Info-Card .customer-Number {
+  margin-top: 20px;
+  display: flex;
+  font-family: "Amatic SC";
+  justify-content: space-between;
+}
+.Exercise .Info-Card .customer-Number .num {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #041e42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: 5px auto;
+}
+.Exercise .Info-Card .customer-Number .number-head {
+  font-size: 28px;
+}
+.Exercise .Image-Card {
+  margin-top: 50px;
+}
+.Exercise .Image-Card .img-fluid {
+  display: block;
+  margin: 10px auto;
+}
+@media (max-width: 1700px) {
+  .Exercise .Info-Card {
+    padding-left: 50px;
+  }
+  .Exercise .Info-Card .head {
+    font-size: 81px;
+  }
+}
+@media (max-width: 1400px) {
+  .Exercise .Info-Card .head {
+    font-size: 67px;
+  }
+  .Exercise .Info-Card .desc {
+    line-height: 1.5;
+  }
+  .Exercise .Image-Card {
+    display: flex;
+  }
+}
+@media (max-width: 1200px) {
+  .Exercise .Info-Card {
+    padding-left: 10px;
+  }
+  .Exercise .Info-Card .head {
+    font-size: 55px;
+  }
+}
+@media (max-width: 992px) {
+  .Exercise {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (max-width: 767px) {
+  .Exercise .Info-Card {
+    margin-top: 50px;
+  }
+  .Exercise .Info-Card .head {
+    font-size: 47px;
+  }
+  .Exercise .Info-Card .desc {
+    margin-top: 20px;
+  }
+  .Exercise .Info-Card .customer-Number .number-head {
+    font-size: 22px;
+  }
+  .Exercise .Image-Card {
+    margin: 55px 0;
+  }
+}
+
+.BodyList {
+  margin-top: 50px;
+}
+.BodyList .head {
+  font-size: 22px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+.BodyList .img-fluid {
+  display: block;
+  margin: 40px auto;
 }/*# sourceMappingURL=globals.css.map */
